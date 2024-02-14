@@ -1,0 +1,48 @@
+@import "_vars";
+
+.nav {
+    max-width: 1160px;
+    margin: 50px auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    font-family: $font-Mono;
+    font-size: 16px;
+    line-height: 16px;
+    align-items: center;
+    &__left {
+        display: flex;
+    }
+    &__links{
+      display: flex; 
+      gap:40px; 
+    }
+    &__logo{
+       
+       padding-right: 40px;
+       display: flex;
+       gap:4.5px;
+       align-items: baseline;
+
+    }
+
+    &__icons{
+        display: flex;
+        gap: 12px; 
+      
+    }
+
+    &__socialmedia {
+        width: 36px;
+        height: 36px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+    &__socialmedia svg{
+     
+    }
+}

@@ -1,17 +1,9 @@
-
-@font-face {
-    font-family: 'InfoTextWebPro';
-    src: url(/fonts/InfoTextWebPro.woff);
-}
-
-
-
-
+@import "_vars";
 
 html {
     box-sizing: border-box;
-    font-family: 'InfoTextWebPro';
-       
+    background-color:#000000;
+    color: $main-color;
 }
 
 *,
@@ -65,4 +57,13 @@ select {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+section {
+ max-width: 1160px;
+ padding: 0 15px;
+ margin-left: 40px;
+}
+.hidden {
+    display: none;
 }

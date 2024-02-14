@@ -1,0 +1,22 @@
+.artists {
+    max-width: 1160px;
+    margin-left: 40px;
+    &__list{
+       display: flex;
+       align-content: space-between;
+       flex-wrap: wrap; 
+       gap:60px 40px;  
+    }
+    // &__person {
+    //  padding-bottom: 60px;   
+    // }
+    &__photo{
+        padding-bottom: 40px;
+    }
+    &__name {
+        text-align: center;
+    }
+}
+
+
+    

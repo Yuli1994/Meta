@@ -1,0 +1,26 @@
+.button {
+    display: block;
+    text-align: center;
+    max-width: 205px;
+    padding: 17px 40px;
+    background-color: $green-color;
+    color: black;
+    font-family: $font-Mono;
+    align-items: baseline;
+&_transparent {
+    background-color: transparent;
+    color:#FFFFFF;
+    border: 1px solid $green-color;
+    max-width: 246px;
+    padding: 10px 33px 16px 33px;
+}
+
+&_small {
+    max-width: 213px;
+    padding: 3px 31px 7px 31px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+}

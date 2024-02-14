@@ -1,0 +1,25 @@
+
+
+ .logo{
+   display: flex;
+   gap:4.5px;
+
+
+&__item{
+    
+     display: flex;
+ 
+ &_three{
+   padding: 0;
+    align-items: baseline;
+ }
+
+
+&_three >svg:nth-child(-n + 2){
+   margin-right: 4.5px;
+}
+ }
+
+
+
+}

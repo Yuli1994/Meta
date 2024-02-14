@@ -1,7 +1,7 @@
 @import "_vars";
 
 .nav {
-    max-width: 1160px;
+    max-width: 1190px;
     margin: 50px auto;
     padding: 0 15px;
     display: flex;
@@ -10,39 +10,18 @@
     font-size: 16px;
     line-height: 16px;
     align-items: center;
+
     &__left {
         display: flex;
+        gap:40px;
     }
     &__links{
       display: flex; 
       gap:40px; 
+      align-items: center;
     }
-    &__logo{
-       
-       padding-right: 40px;
-       display: flex;
-       gap:4.5px;
-       align-items: baseline;
+  
 
-    }
-
-    &__icons{
-        display: flex;
-        gap: 12px; 
-      
-    }
-
-    &__socialmedia {
-        width: 36px;
-        height: 36px;
-        background-color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
+ 
     
-    &__socialmedia svg{
-     
-    }
 }

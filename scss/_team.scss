@@ -1,0 +1,39 @@
+.team {
+    margin: 0 auto;
+    padding-bottom: 236px;
+    &__members {
+        display: flex;
+        gap:100px;
+        font-family: $font-Mono;
+
+    }
+
+    &__name {
+        font-size: 21px;
+        line-height: 27.73px;
+        padding-top: 19px;
+        text-transform: uppercase;
+    }
+
+    &__member {
+        text-align: center;
+    }
+    &__position {
+        padding-top: 18px;
+        padding-bottom: 22px;
+        font-size: 11px;
+        letter-spacing: 1px;
+        line-height: 12px;
+        color: $green-color;
+        text-transform: uppercase;
+    }
+    &__motto {
+        text-align: center;
+        padding-top: 22px;
+        line-height: 19.2px;
+        font-size: 12px;
+        font-family: $font-Inter;
+        max-width: 238px;
+        margin: 0 auto;
+    }
+}

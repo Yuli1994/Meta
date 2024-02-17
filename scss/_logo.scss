@@ -3,22 +3,30 @@
  .logo{
    display: flex;
    gap:4.5px;
-
+   &_small {
+      gap:0.30px;
+   }
 
 &__item{
     
      display: flex;
  
- &_three{
+ &_has_margin{
    padding: 0;
     align-items: baseline;
  }
 
 
-&_three >svg:nth-child(-n + 2){
+&_has_margin >svg:nth-child(-n + 2){
    margin-right: 4.5px;
 }
+
+&_small >svg:nth-child(-n + 2) {
+   margin-right: 0.30px;
+}
+
  }
+
 
 
 

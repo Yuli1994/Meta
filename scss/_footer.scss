@@ -4,11 +4,12 @@ background-color: #42006A;
 width: 100%;
 padding-top: 100px;
 padding-bottom: 100px;
+font-family: $font-Mono;
+
 &__container{
   max-width: 1190px; 
-    display: flex;
-    justify-content: space-between;
-    gap: 64px;
+   display: flex;
+   justify-content: space-between;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -20,13 +21,27 @@ padding-bottom: 100px;
  &__left {
     display: flex;
     flex-direction: column;
-    gap:60px;
+    gap:70px;
+    max-width: 208px;
+    width: 100%;
  }
 
  &__links {
     display: flex;
     flex-direction: column;
     gap:29px;
+    line-height: 19.2px;
+&_small_text {
+   font-size: 13px;
+}
+    
+ }
+
+ &__copyright {
+   font-size: 13px;
+   line-height: 20.48px;
+   width: 100%;
+   
  }
 
 }

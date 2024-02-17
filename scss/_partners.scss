@@ -1,0 +1,13 @@
+.partners {
+    max-width: 100%;
+    text-align: center;
+    padding-bottom: 50px;
+    &__header {
+        color: $green-color;
+        letter-spacing: 1px;
+        line-height: 12px;
+        font-size: 11px;
+        font-family: $font-Mono;
+        text-transform: uppercase;
+    }
+}

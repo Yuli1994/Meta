@@ -33,6 +33,7 @@ figcaption,
 blockquote,
 dl,
 dd {
+    font-weight: 400;
     margin: 0;
 }
 
@@ -52,11 +53,14 @@ button,
 textarea,
 select {
     font: inherit;
+    padding: 0;
+    cursor: pointer;
 }
 
 a {
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
 }
 
 section {

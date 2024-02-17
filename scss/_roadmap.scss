@@ -1,0 +1,110 @@
+.roadmap {
+    max-width: 100%;
+    margin: 0;
+    padding-bottom: 240px;
+
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        max-width: 720px;
+        gap: 140px;
+        margin: 0 auto;
+    }
+
+    &__header {
+        border-bottom: 1px solid $green-color;
+        font-family: $font-Mono;
+        display: flex;
+        padding: 12px;
+        align-items: center;
+    }
+
+    &__number {
+       
+        width: 45px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       background-color: transparent;
+        font-size: 28px;
+        border: 1px solid $green-color;
+        
+        &_backround_green {
+            background-color: $green-color;
+            color: black;
+        }
+    }
+    &__block {
+        &_position_top {
+            padding-left: 22.25px;
+            padding-bottom: 14px;
+        }
+        &_position_middle {
+            padding-bottom: 14px;
+            padding-top: 10.75px;
+        }
+    }
+
+    &__event {
+        text-transform: uppercase;
+    }
+    &__subtitle {
+        padding-left: 11.75px;
+    }
+
+    &__card {
+        max-width: 538px;
+        border: 1px solid $green-color;
+        background-color: #222222;
+        margin: 0 auto;
+    }
+
+    &__description {
+        font-family: $font-Inter;
+        max-width: 310px;
+    }
+
+    &__title {
+        font-size: 38px;
+        font-family: $font-Audiowide;
+        line-height: 45.5px;
+        text-transform: uppercase;
+        text-align: center;
+        padding-bottom: 80px;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 12px;
+    }
+
+    &__text {
+        font-size: 11px;
+        line-height: 32px;
+
+        &_size_big {
+            font-size: 12px;
+        }
+
+        &_line-height {
+            line-height: 25.6px;
+        }
+        &_color_green {
+            color: $green-color;
+        }
+    }
+
+    &__phase {
+        color: $green-color;
+        font-size: 8px;
+        line-height: 12px;
+        text-transform: uppercase;
+    }
+
+    &__img {
+        border-radius: 8px;
+    }
+
+}

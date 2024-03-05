@@ -2,6 +2,7 @@
     display: flex;
     gap: 12px; 
 
+
   &_position_center {
    justify-content: center;
     }
@@ -12,11 +13,15 @@
     background-color: white;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
+    transition: all .2s;
+     &:hover {
+      background-color:  #BF5693;
+  }
+}
     }
 
   
-}
 
 
 

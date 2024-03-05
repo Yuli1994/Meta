@@ -1,4 +1,3 @@
-@import "_vars";
 
 .nav {
     max-width: 1190px;
@@ -15,13 +14,14 @@
         display: flex;
         gap:40px;
     }
-    &__links{
+    &__links {
       display: flex; 
       gap:40px; 
       align-items: center;
+      transition:color .2s;
+    
     }
-  
-
+ 
  
     
 }

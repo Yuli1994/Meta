@@ -3,10 +3,12 @@
     padding: 0;
     margin: 0;
     padding-bottom: 120px;
+    z-index:-10;
     &__img { 
         width: 100%;
         object-fit: fill;
         height: 240px;
+        
     }
     
 }

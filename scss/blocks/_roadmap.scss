@@ -2,6 +2,7 @@
     max-width: 100%;
     margin: 0;
     padding-bottom: 240px;
+    position: relative;
 
     &__cards {
         display: flex;
@@ -9,6 +10,8 @@
         max-width: 720px;
         gap: 140px;
         margin: 0 auto;
+        z-index: 1000;
+        
     }
 
     &__header {
@@ -20,26 +23,28 @@
     }
 
     &__number {
-       
+
         width: 45px;
         height: 45px;
         display: flex;
         justify-content: center;
         align-items: center;
-       background-color: transparent;
+        background-color: transparent;
         font-size: 28px;
         border: 1px solid $green-color;
-        
+
         &_backround_green {
             background-color: $green-color;
             color: black;
         }
     }
+
     &__block {
         &_position_top {
             padding-left: 22.25px;
             padding-bottom: 14px;
         }
+
         &_position_middle {
             padding-bottom: 14px;
             padding-top: 10.75px;
@@ -49,6 +54,7 @@
     &__event {
         text-transform: uppercase;
     }
+
     &__subtitle {
         padding-left: 11.75px;
     }
@@ -57,8 +63,10 @@
         max-width: 538px;
         border: 1px solid $green-color;
         background-color: #222222;
-        margin: 0 auto;
+        margin: 0 auto; 
+
     }
+
 
     &__description {
         font-family: $font-Inter;
@@ -91,6 +99,7 @@
         &_line-height {
             line-height: 25.6px;
         }
+
         &_color_green {
             color: $green-color;
         }
@@ -107,4 +116,107 @@
         border-radius: 8px;
     }
 
+}
+
+.lines {
+    position: absolute;
+    z-index: -1;
+}
+
+.lines_one {
+
+    top: 10%;
+    left: 30%;
+}
+
+.lines_two {
+
+    top: 40%;
+    right: 30%;
+
+}
+
+.lines_three {
+
+    bottom: 25%;
+    left: 30%;
+
+}
+
+
+
+.lines span {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+
+}
+
+.span1 {
+    width: 99px;
+    height: 99px;
+    border: 3px solid green;
+    animation: pulsation1 10s infinite;
+}
+
+.span2 {
+
+    width: 160px;
+    height: 160px;
+    border: 2px solid green;
+    animation: pulsation2 10s infinite;
+}
+
+.span3 {
+    width: 258px;
+    height: 258px;
+    border: 2px solid green;
+    animation: pulsation1 10s infinite;
+}
+
+.span4 {
+    width: 416px;
+    height: 416px;
+    border: 1px solid green;
+    animation: pulsation2 10s infinite;
+}
+
+.span5 {
+    width: 670px;
+    height: 670px;
+    border: 1px solid green;
+    animation: pulsation1 10s infinite;
+}
+
+@keyframes pulsation1 {
+    0% {
+        transform: translate(-50%, -50%) scale(1.1);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+
+    100% {
+        transform: translate(-50%, -50%) scale(1.1);
+    }
+}
+
+
+@keyframes pulsation2 {
+    0% {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
 }

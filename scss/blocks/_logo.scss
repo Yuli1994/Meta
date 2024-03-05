@@ -1,0 +1,41 @@
+.logo {
+   display: flex;
+   gap: 4.5px;
+
+   path {
+      transition: all .2s;
+   }
+
+   &_small {
+      gap: 0.30px;
+   }
+
+   &__item {
+
+      display: flex;
+
+      &_has_margin {
+         padding: 0;
+         align-items: baseline;
+      }
+
+
+      &_has_margin>svg:nth-child(-n + 2) {
+         margin-right: 4.5px;
+      }
+
+      &_small>svg:nth-child(-n + 2) {
+         margin-right: 0.30px;
+      }
+
+
+
+   }
+
+   &:hover path {
+      fill: #BF5693;
+
+   }
+
+
+}

@@ -1,0 +1,31 @@
+.marquee-infinite {
+    margin: 0px auto;
+    max-width: 100%;
+    overflow: hidden;
+  
+    
+}
+.marquee-infinite div {
+    display: flex;
+    width: 200%; 
+    animation-name: marquee-infinite;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; 
+}
+.marquee-infinite h1 {
+    width: 100%;
+    font-size: 79px;
+    line-height: 88px;
+    font-family: $font-Audiowide;
+    
+}
+
+@keyframes marquee-infinite {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}

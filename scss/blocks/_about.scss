@@ -7,7 +7,7 @@
         text-align: center;
         text-transform: uppercase;
         padding-bottom: 61px;
-
+        font-family: $font-Audiowide;
         &_color_grey {
             color: #A8A8A8;
         }
@@ -33,12 +33,13 @@
         border: none;
         color: white;
         font-family: $font-Mono;
-
+        transition: all .2s;
         &_active {
             background-color: #222222;
             color: $green-color;
-            
-        }
+                }
+      
+    
     }
 
     &__subtitle {
@@ -69,6 +70,8 @@
         width: 100%;
         background-color: #222222;
         justify-content: space-between;
+        display: none;
+        min-height: 560px;
     }
 
     &__text {
@@ -78,3 +81,4 @@
         line-height: 25.6px;
     }
 }
+

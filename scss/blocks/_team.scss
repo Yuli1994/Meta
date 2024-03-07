@@ -1,12 +1,23 @@
 .team {
     margin: 0 auto;
-    padding-bottom: 236px;
+    padding-bottom: 120px;
+    padding-top: 120px;
     
-padding-top: 120px;
+    @media (max-width: $layout-breakpoint-small) {
+        padding-bottom: 100px;
+       
+    }
+    @media (max-width: $layout-breakpoint-xsmall) {
+        padding-bottom: 50px;
+    
+    }
+
     &__members {
         display: flex;
-        gap:100px;
+        flex-wrap: wrap;
+        gap: 100px;
         font-family: $font-Mono;
+        justify-content: center;
 
     }
 
@@ -20,6 +31,7 @@ padding-top: 120px;
     &__member {
         text-align: center;
     }
+
     &__position {
         padding-top: 18px;
         padding-bottom: 22px;
@@ -29,6 +41,7 @@ padding-top: 120px;
         color: $green-color;
         text-transform: uppercase;
     }
+
     &__motto {
         text-align: center;
         padding-top: 22px;
@@ -37,5 +50,10 @@ padding-top: 120px;
         font-family: $font-Inter;
         max-width: 238px;
         margin: 0 auto;
+    }
+    &__member-img{
+        @media (max-width: $layout-breakpoint-small) {
+            max-width: 220px;
+          }
     }
 }

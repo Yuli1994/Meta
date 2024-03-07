@@ -1,12 +1,30 @@
 .faq {
     display: flex;
     margin: 0 auto;
-    padding-bottom: 115px;
+    padding-bottom: 120px;
     align-items: center;
+
+
+    @media (max-width: $layout-breakpoint-medium) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      @media (max-width: $layout-breakpoint-small) {
+        padding-bottom: 100px;
+       }
+       @media (max-width: $layout-breakpoint-xsmall) {
+           padding-bottom: 50px;
+       
+       }
 
     &__block {
         max-width: 50%;
         width: 100%;
+
+        @media (max-width: $layout-breakpoint-medium) {
+          max-width: 100%;
+          }
     }
 
     &__title {
@@ -20,6 +38,20 @@
             color: #A8A8A8;
 
         }
+
+        @media (max-width: $layout-breakpoint-medium) {
+            font-size: 32px;
+            text-align: center;
+            br {
+                display: none;
+            }
+         }
+         @media (max-width: $layout-breakpoint-small) {
+            font-size: 28px;
+         }
+         @media (max-width: $layout-breakpoint-xsmall) {
+            font-size: 18px;
+         }
     }
  
     &__header {
@@ -37,6 +69,11 @@
         &_active {
             color: $green-color;
         }
+
+        @media (max-width: $layout-breakpoint-small) {
+            padding-top: 15px;
+           
+         }
         
     }
 
@@ -51,7 +88,12 @@
         padding-left: 30px;
         padding-right: 30px;
         background-color: #222222;
-        
+
+        @media (max-width: $layout-breakpoint-small) {
+            padding-bottom: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+         }
     }
 
     &__content {
@@ -106,9 +148,15 @@
             animation: open2 .3s ease-in-out;
             transform: rotate(45deg);
         }
+
+    
     }
 
-
+    &__img {
+        @media (max-width: $layout-breakpoint-medium) {
+           display: none;
+         }
+    }
 
 @keyframes open1 {
     0% {

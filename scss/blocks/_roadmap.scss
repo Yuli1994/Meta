@@ -1,18 +1,45 @@
 .roadmap {
+
     max-width: 100%;
     margin: 0;
     padding-bottom: 240px;
     position: relative;
+    overflow: hidden;
 
+    @media (max-width: $layout-breakpoint-small) {
+     padding-bottom: 100px;
+    }
+    @media (max-width: $layout-breakpoint-xsmall) {
+        padding-bottom: 50px;
+    
+    }
     &__cards {
         display: flex;
         flex-direction: column;
-        max-width: 720px;
         gap: 140px;
-        margin: 0 auto;
-        z-index: 1000;
-        
+        align-items: center;
+
+        @media (max-width: $layout-breakpoint-medium) {
+
+            gap: 100px;
+        }
+
+        @media (max-width: $layout-breakpoint-small) {
+
+            gap: 50px;
+
+        }
+
     }
+
+    &__card {
+        max-width: 538px;
+        width: 100%;
+        border: 1px solid $green-color;
+        background-color: #222222;
+
+    }
+
 
     &__header {
         border-bottom: 1px solid $green-color;
@@ -53,24 +80,23 @@
 
     &__event {
         text-transform: uppercase;
+
+        @media (max-width: $layout-breakpoint-small) {
+            font-size: 14px;
+
+        }
     }
 
     &__subtitle {
         padding-left: 11.75px;
     }
 
-    &__card {
-        max-width: 538px;
-        border: 1px solid $green-color;
-        background-color: #222222;
-        margin: 0 auto; 
-
-    }
 
 
     &__description {
         font-family: $font-Inter;
         max-width: 310px;
+
     }
 
     &__title {
@@ -80,28 +106,42 @@
         text-transform: uppercase;
         text-align: center;
         padding-bottom: 80px;
+        padding-top: 120px;
     }
 
     &__info {
         display: flex;
         justify-content: space-between;
         padding: 30px 12px;
+
+        @media (max-width: $layout-breakpoint-small) {
+            padding: 15px 10px;
+            gap: 10px;
+               display: grid;
+            grid-template-columns: auto auto;
+        }
+     
     }
 
     &__text {
         font-size: 11px;
-        line-height: 32px;
+        line-height: 3;
 
         &_size_big {
             font-size: 12px;
         }
 
         &_line-height {
-            line-height: 25.6px;
+            line-height: 2.5;
         }
 
         &_color_green {
             color: $green-color;
+        }
+
+
+        @media (max-width: $layout-breakpoint-small) {
+            line-height: 2;
         }
     }
 
@@ -114,6 +154,10 @@
 
     &__img {
         border-radius: 8px;
+
+        @media (max-width: $layout-breakpoint-small) {
+            display: none;
+        }
     }
 
 }
@@ -189,6 +233,14 @@
     height: 670px;
     border: 1px solid green;
     animation: pulsation1 10s infinite;
+
+}
+
+@media (max-width: $layout-breakpoint-medium) {
+    .span5 {
+        visibility: hidden;
+    }
+
 }
 
 @keyframes pulsation1 {

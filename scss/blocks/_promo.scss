@@ -1,40 +1,117 @@
-
 .promo {
     max-width: 100%;
     display: flex;
     align-items: center;
-    padding: 0;
-    margin-left: 70px;
     padding-bottom: 114px;
+    padding-top: 180px;
+    margin-left: 120px;
 
-    &__left {
-        width: 35%;
+    @media (max-width: $layout-breakpoint-exexlarge) {
+     
+        height: 100vh;
+    }
+    @media (max-width: $layout-breakpoint-large) {
+        margin: 0 auto;
+        justify-content: center;
+        padding-bottom: 50px;
     }
 
+    
+    &__left {
+      
+        @media (max-width: $layout-breakpoint-large) {
+     
+            text-align: center;
+         }
+    }
     &__right {
         width: 65%;
         display: flex;
         justify-content: end;
+        @media (max-width: $layout-breakpoint-large) {
+
+            display: none;
+         }
     }
 
     &__right img {
 
         max-width: 870px;
         width: 100%;
+
+        @media (max-width: $layout-breakpoint-exexlarge) {
+
+            max-width: 600px;
+            width: 100%;
+        }
+      
+
     }
 
     &__title {
         font-family: $font-Audiowide;
-        font-size: 51px;
-        max-width: 484px;
+        font-size: 60px;
         padding-bottom: 43px;
+
+        @media (max-width: $layout-breakpoint-exexlarge) {
+            font-size: 51px;
+            max-width: 484px;
+        }
+
+        @media (max-width: $layout-breakpoint-exlarge) {
+            font-size: 45px;
+
+        }
+
+        @media (max-width: $layout-breakpoint-large) {
+            font-size: 40px;
+            max-width: 100%;
+            padding-bottom: 70px;
+        }
+
+        @media (max-width: $layout-breakpoint-medium) {
+            font-size: 36px;
+
+        }
+        @media (max-width: $layout-breakpoint-small) {
+            font-size: 32px;
+
+        }
+
+
     }
 
     &__text {
         font-family: $font-Inter;
-        font-size: 16px;
-        max-width: 340px;
         padding-bottom: 115px;
+        max-width: 500px;
+
+        @media (max-width: $layout-breakpoint-exexlarge) {
+            font-size: 18px;
+            max-width: 380px;
+        }
+
+        @media (max-width: $layout-breakpoint-exlarge) {
+            padding-bottom: 70px;
+            font-size: 16px;
+            max-width: 80%;
+            
+        }
+        @media (max-width: $layout-breakpoint-large) {
+            max-width: unset;
+           text-align: center;
+           padding: 0 50px;
+           padding-bottom: 70px;
+        }
+
+     
+        @media (max-width: $layout-breakpoint-small) {
+            font-size: 14px;
+            padding: 0 30px;
+            padding-bottom: 50px;
+        }
     }
+
+
 
 }

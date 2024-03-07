@@ -1,64 +1,184 @@
-
 .collection {
 
-    margin-left: 40px;
     display: flex;
     padding-bottom: 120px;
 
- &__left {
-    max-width: 50%;
-    width: 100%;
- }
-&__right {
-    max-width: 50%;
-    width: 100%;
-    position: relative;
-}
-&__title {
+    @media (max-width: $layout-breakpoint-medium) {
+        flex-direction: column;
+       gap:40px;
+    }
+    @media (max-width: $layout-breakpoint-small) {
+        padding-bottom: 100px;
+ 
+    }
+
+    @media (max-width: $layout-breakpoint-xsmall) {
+        padding-bottom: 50px;
+
+    }
+
+    &__left {
+        max-width: 50%;
+        width: 100%;
+
+        @media (max-width: $layout-breakpoint-medium) {
+            max-width: 100%;
+            width: 100%;
+            display: flex;
+            align-items:center ;
+            justify-content: space-between;
+            padding: 0 50px;
+        }
+        @media (max-width: $layout-breakpoint-small) {
+          padding: 0px;
+        }
+        
+        @media (max-width: $layout-breakpoint-small) {
+            flex-direction: column;
+        
+          }
+    }
+
+    &__right {
+        max-width: 50%;
+        width: 100%;
+        position: relative;
+
+        @media (max-width: $layout-breakpoint-medium) {
+            max-width: 100%;
+            padding: 50px;
+        }
+
+        @media (max-width: $layout-breakpoint-small) {
+            padding: 0px;
+              
+          }
+    }
+
+    &__title {
+        font-size: 38px;
+        font-family: $font-Audiowide;
+        padding-bottom: 40px;
+        padding-left: 60px;
+
+        @media (max-width: $layout-breakpoint-large) {
+            padding-left: 40px;
+            font-size: 32px;
+        }
+
+        @media (max-width: $layout-breakpoint-medium) {
+            font-size: 24px;
+            padding: 0px;   
+            
+        }
+  
+        @media (max-width: $layout-breakpoint-small) {
+        
+            text-align: center;
+            padding-bottom: 20px;
+          }
+
+          @media (max-width: $layout-breakpoint-xsmall) {
+            font-size: 18px;
+          }
+    }
+
+    &__img {
+        @media (max-width: $layout-breakpoint-medium) {
+        max-width: 250px;
+        width: 100%;
+        }
+
+        @media (max-width: $layout-breakpoint-small) {
+            max-width: 150px;
+            width: 100%;
+            }
+       
+    
+
+    }
+
+    &__colortitle {
+        color: #A8A8A8;
+
+    }
+
+    &__subtitle {
+        font-size: 21px;
+        line-height: 32px;
+        padding-bottom: 27px;
+        padding-left: 22px;
+        max-width: 566px;
+        font-family: $font-Mono;
+        color: $green-color;
+
+        @media (max-width: $layout-breakpoint-large) {
+            font-size: 16px;
+            line-height: 28px;
+            padding-bottom: 14px;
+
+        }
+
+        @media (max-width: $layout-breakpoint-small) {
+            font-size: 14px;
+            line-height: 22px;
+          }
+          @media (max-width: $layout-breakpoint-xsmall) {
+            font-size: 12px;
+            line-height: 18px;
+          }
+    }
+
+    &__text {
+        font-size: 16px;
+        padding-bottom: 20px;
+        font-family: $font-Inter;
+        line-height: 25.6px;
+        max-width: 551px;
+
+        &_position_middle {
+            font-size: 15px;
+            max-width: 562px;
+        }
+
+        &_position_last {
+            max-width: 564px;
+        }
+
+        @media (max-width: $layout-breakpoint-large) {
+            max-width: 100%;
+            font-size: 14px;
+            padding-bottom: 18px;
+        }
+
+      
+         @media (max-width: $layout-breakpoint-small) {
+            font-size: 12px;
+            padding-bottom: 10px;
+          }
+    }
+
+    &__subtitle::before {
+        content: "";
+        display: block;
+        width: 2px;
+        height: 124px;
+        background-color: $green-color;
+        position: absolute;
+        margin-left: -22px;
+        border-radius: 5px;
+
+        @media (max-width: $layout-breakpoint-large) {
+          height: 100px;  
+        }
+
+        @media (max-width: $layout-breakpoint-medium) {
+            height: 90px;
+        }
+        @media (max-width: $layout-breakpoint-small) {
+        height: 80px;
+    } 
+    }
    
-    font-size: 38px;
-    font-family: $font-Audiowide;
-    padding-bottom: 40px;
-    padding-left: 60px;
-
-}
-&__colortitle {
-   color: #A8A8A8;
-
-}
-&__subtitle{
-    font-size: 21px;
-    line-height: 32px;
-    padding-bottom: 27px;
-    padding-left: 22px;
-    max-width: 566px;
-    font-family:$font-Mono;
-    color: $green-color;
-}
-&__text {
-    font-size: 16px;
-    padding-bottom: 18px;
-    font-family:$font-Inter;
-    line-height: 25.6px;
-    max-width: 551px;
-    &_position_middle {
-        font-size: 15px;
-        max-width: 562px;
-    }
-    &_position_last {
-        max-width: 564px;
-    }
 }
 
-&__subtitle::before{
-    content: "";
-    display: block;
-    width:2px;
-    height: 124px;
-    background-color:$green-color;
-    position: absolute;
-    margin-left: -22px;
-    border-radius: 5px;
-}
-
-}

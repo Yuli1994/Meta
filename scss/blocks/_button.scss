@@ -1,5 +1,5 @@
 .button {
-    display: block;
+
     text-align: center;
     max-width: 205px;
     padding: 17px 40px;
@@ -8,31 +8,52 @@
     font-family: $font-Mono;
     align-items: baseline;
     transition: all .2s;
-&_transparent {
-    background-color: transparent;
-    color:#FFFFFF;
-    border: 1px solid $green-color;
-    max-width: 246px;
-    padding: 10px 33px 16px 33px;
+    display: inline-block;
+
+    &_transparent {
+        background-color: transparent;
+        color: #FFFFFF;
+        border: 1px solid $green-color;
+        max-width: 246px;
+        padding: 10px 33px 16px 33px;
+
+        &:hover {
+            border: 1px solid transparent;
+
+        }
+
+
+    }
+
+    &_small {
+        max-width: 213px;
+        padding: 17px 31px 17px 31px;
+        display: flex;
+        gap:10px;
+        align-items: center;
+        justify-content: center;
+    }
 
     &:hover {
-        border: 1px solid transparent;
-        
+        color: white;
+        background-color: #8cfd1b9a;
     }
-    
-}
 
-&_small {
-    max-width: 213px;
-    padding: 17px 31px 17px 31px ;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    @media (max-width: $layout-breakpoint-medium) {
+     
+        font-size: 14px;
+        padding: 8px 20px 12px 20px;
+    }
 
-&:hover {
-    color:white;  
-    background-color: #8cfd1b9a;
-}
+    @media (max-width: $layout-breakpoint-small) {
+        max-width: 200px;
+        font-size: 12px;
+        padding: 6px 17px 10px 17px;
+    }
 
+    @media (max-width: $layout-breakpoint-xsmall) {
+        max-width: 180px;
+        font-size: 11px;
+        padding: 4px 15px 8px 15px;
+    }
 }

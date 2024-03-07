@@ -2,26 +2,56 @@
     cursor: pointer;
     max-width: 1160px;
     margin-left: 40px;
-    padding-bottom: 240px;
+    padding-bottom: 120px;
     padding-top: 120px;
+
+
+
+    @media (max-width: 882px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 120px;
+        margin-left: 0px;
+    }
+
+    @media (max-width: $layout-breakpoint-small) {
+        padding-bottom: 100px;
+        padding-top: 100px;
+    }
+    @media (max-width: $layout-breakpoint-xsmall) {
+        padding-bottom: 50px;
+        padding-top: 50px;
+    
+    }
 
     &__list {
         display: flex;
         align-content: space-between;
         flex-wrap: wrap;
         gap: 60px 40px;
+
+        @media (max-width: 882px) {
+
+            justify-content: center;
+            padding-bottom: 40px;
+        }
+
     }
 
     &__photo {
         padding-bottom: 40px;
         transition: all .5s;
 
+        @media (max-width: $layout-breakpoint-small) {
+          max-width: 180px;
+        }
     }
 
     &__name {
         text-align: center;
         font-family: $font-Mono;
-
+ 
     }
 
     &__inner {
@@ -35,6 +65,35 @@
         top: -50px;
         transform: translateX(-50%);
         display: none;
+
+        
+   
+    }
+
+    &__person {
+
+
+        &_disable {
+            @media (max-width: 882px) {
+                display: none;
+
+            }
+
+        }
+    }
+
+    &__button {
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        min-width: 114px;
+
+        @media (min-width: 882px) {
+            display: none;
+
+        }
     }
 }
 
@@ -42,6 +101,9 @@
     transform: translateY(-150px);
     color: #BF5693;
 
+    @media (max-width: $layout-breakpoint-small) {
+        transform: translateY(-120px);
+      }
 }
 
 .artists__person:hover .artists__photo {
@@ -50,5 +112,5 @@
 }
 
 .artists__person:hover .artists__icons {
- display: flex;
+    display: flex;
 }

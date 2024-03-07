@@ -1,3 +1,27 @@
+// Klick-Funktion für #hamburger hinzufügen
+document.getElementById("hamburger").addEventListener("click", navStatus);
+
+// Prüfen ob die Navigation geöffnet oder geschlossen ist
+function navStatus() {
+  if (document.body.classList.contains("hamburger-active")) {
+    navClose();
+  } else {
+    navOpen();
+  }
+}
+
+// Wenn die Navi geschlossen wird, Klasse für »offen« entfernen
+function navClose() {
+  document.body.classList.remove("hamburger-active");
+}
+
+// Wenn die Navi geöffnet wird, Klasse für »geschlossen« entfernen
+function navOpen() {
+  document.body.classList.add("hamburger-active");
+}
+
+
+
 let buttons = document.querySelectorAll(".about__button");
 let contents = document.querySelectorAll(".about__content");
 
@@ -57,5 +81,25 @@ button.addEventListener("click", function(){
 });
 
 
+////////////////////////////////////////////////Artists/////////////
 
+  let artistItem = document.querySelectorAll(".artists__person_disable");
+  let artistButton = document.querySelector(".artists__button");
+  let buttonText = document.querySelector(".artists__button-text");
+  let buttonIcon = document.querySelector(".artists__button-svg");
+  artistButton.addEventListener("click",function(){
 
+    artistItem.forEach(function(item, index){
+       item.classList.toggle("artists__person_disable");
+      if(item.classList.contains("artists__person_disable")){
+     buttonText.innerHTML = "Show more";
+      buttonIcon.style.display = "block";
+    }else {
+     buttonText.innerHTML = "Hide";
+     buttonIcon.style.display = "none";
+    }
+    })
+    
+    
+
+  });

@@ -11,8 +11,25 @@ a {
 section {
     max-width: 1190px;
     padding: 0 15px;
-    margin-left: 40px;
-   }
+}
+
+  @media (min-width: $layout-breakpoint-large) {
+    section {
+        margin-left: 0;
+    }
+  }
+    @media (min-width: $layout-breakpoint-exlarge) {
+    section {
+        margin-left: 80px;
+    }
+  }
+@media (min-width: $layout-breakpoint-exexlarge) {
+    section {  
+        margin-left: 100px;
+ 
+    }
+  }
+ 
 
    .visually-hidden {
     display: none;

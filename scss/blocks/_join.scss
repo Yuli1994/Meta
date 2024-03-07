@@ -1,16 +1,41 @@
 .join {
     display: flex;
     align-items: center;
-    padding-bottom: 118px;
+    padding-bottom: 120px;
     margin: 0 auto;
+    
+    @media (max-width: $layout-breakpoint-small) {
+        padding-bottom: 100px;
+       
+    }
+    @media (max-width: $layout-breakpoint-xsmall) {
+        padding-bottom: 50px;
+    
+    }
+    
     &__left {
         max-width: 50%;
         width: 100%;
+
+        @media (max-width: $layout-breakpoint-small) {
+            max-width: 100%;
+            text-align: center;
+           }
     }
 
     &__right {
         max-width: 50%;
         width: 100%;
+
+        @media (max-width: $layout-breakpoint-medium) {
+           display: flex;
+           justify-content: center;
+          }
+
+          @media (max-width: $layout-breakpoint-small) {
+            display: none;
+          
+           }
     }
     &__title { 
         padding-top: 28.61px;
@@ -22,6 +47,25 @@
         &_color_green {
             color:$green-color
             }
+
+            @media (max-width: $layout-breakpoint-large) {
+               
+                font-size: 40px;
+                line-height: 55px;
+            }
+    
+            @media (max-width: $layout-breakpoint-medium) {
+                font-size: 38px;
+                line-height: 40px;
+                
+            }
+            @media (max-width: $layout-breakpoint-small) {
+                font-size: 28px;
+                line-height: 30px;
+              }
+              @media (max-width: $layout-breakpoint-xsmall) {
+                font-size: 24px;
+              }
     }
 
     &__text {
@@ -30,6 +74,21 @@
         line-height:25.6px;
         padding-top: 34px;
         padding-bottom: 35px;
+
+        @media (max-width: $layout-breakpoint-large) {
+              width: 100%;  
+            font-size: 14px;
+        }
+
+        @media (max-width: $layout-breakpoint-small) {
+            padding: 20px;
+       
+           max-width: 100%;
+          }
+          @media (max-width: $layout-breakpoint-xsmall) {
+            font-size: 12px;
+           
+          }
 
     }
    
@@ -42,6 +101,11 @@
             fill: white;
         
         }
+        @media (max-width: $layout-breakpoint-small) {
+          display: inline-flex;
+          }
+
        }
+
 
 }

@@ -1,0 +1,112 @@
+
+/**********Hamburger************/
+
+.hamburger__button {
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: transparent;
+    padding: 0;
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    top: 55px;
+    display: none;
+    border: none;
+   
+}
+
+@media only screen and (max-width: 992px) {
+    .hamburger__button {
+        display: flex;
+        right: 30px;
+    }
+ 
+    .nav__links {
+        display: none;
+    }
+
+    .nav__right {
+        display: none;
+    }
+    .logo{
+
+        padding-left: 15px;
+    }
+
+}
+
+.hamburger__line {
+    height: 3px;
+    width: 100%;
+    background: white;
+    transition: all .2s ease;
+    display: block;
+}
+
+
+/* Darstellung wenn das Close-Icon angezeigt werden soll */
+.hamburger-active {
+    overflow: hidden;
+
+}
+
+
+
+.hamburger-active .hamburger__button {
+    justify-content: unset;
+
+}
+
+.hamburger-active .hamburger__line-1 {
+
+    transition: all .2s ease;
+    transform: rotate(-135deg);
+}
+
+.hamburger-active .hamburger__line-2 {
+    display: none;
+}
+
+.hamburger-active .hamburger__line-3 {
+    transform: rotate(135deg);
+    margin-top: -2px;
+    transition: all .2s ease;
+}
+
+
+.hamburger-active .nav__links {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.hamburger-active .nav__right {
+    display: flex;
+   
+}
+
+.hamburger-active nav {
+    height: 100vh;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+}
+
+.hamburger-active .logo {
+    display: none;
+
+}
+
+.hamburger-active .hamburger__line-1 {
+    height: 3px;
+    width: 100%;
+    background: white;
+    transition: all .2s ease;
+}
+
+// .hamburger-active .preview__maintext,
+// .preview__button {
+//     display: none;
+// }

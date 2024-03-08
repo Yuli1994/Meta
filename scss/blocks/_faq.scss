@@ -8,23 +8,24 @@
     @media (max-width: $layout-breakpoint-medium) {
         flex-direction: column;
         align-items: center;
-      }
+    }
 
-      @media (max-width: $layout-breakpoint-small) {
+    @media (max-width: $layout-breakpoint-small) {
         padding-bottom: 100px;
-       }
-       @media (max-width: $layout-breakpoint-xsmall) {
-           padding-bottom: 50px;
-       
-       }
+    }
+
+    @media (max-width: $layout-breakpoint-xsmall) {
+        padding-bottom: 50px;
+
+    }
 
     &__block {
         max-width: 50%;
         width: 100%;
 
         @media (max-width: $layout-breakpoint-medium) {
-          max-width: 100%;
-          }
+            max-width: 100%;
+        }
     }
 
     &__title {
@@ -42,18 +43,21 @@
         @media (max-width: $layout-breakpoint-medium) {
             font-size: 32px;
             text-align: center;
+
             br {
                 display: none;
             }
-         }
-         @media (max-width: $layout-breakpoint-small) {
+        }
+
+        @media (max-width: $layout-breakpoint-small) {
             font-size: 28px;
-         }
-         @media (max-width: $layout-breakpoint-xsmall) {
+        }
+
+        @media (max-width: $layout-breakpoint-xsmall) {
             font-size: 18px;
-         }
+        }
     }
- 
+
     &__header {
         width: 100%;
         display: flex;
@@ -72,9 +76,9 @@
 
         @media (max-width: $layout-breakpoint-small) {
             padding-top: 15px;
-           
-         }
-        
+
+        }
+
     }
 
     &__accordion {
@@ -83,7 +87,7 @@
         font-size: 12px;
         color: #C4C4C4;
         line-height: 19.2px;
-      
+
         padding-bottom: 30px;
         padding-left: 30px;
         padding-right: 30px;
@@ -93,14 +97,14 @@
             padding-bottom: 15px;
             padding-left: 15px;
             padding-right: 15px;
-         }
+        }
     }
 
     &__content {
-    
-       max-height: 0;
-       overflow: hidden;
-       transition: max-height 0.3s ease-out;
+
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
         padding-right: 30px;
     }
 
@@ -149,86 +153,86 @@
             transform: rotate(45deg);
         }
 
-    
+
     }
 
     &__img {
         @media (max-width: $layout-breakpoint-medium) {
-           display: none;
-         }
+            display: none;
+        }
     }
 
-@keyframes open1 {
-    0% {
-        transform: rotate(45deg);
+    @keyframes open1 {
+        0% {
+            transform: rotate(45deg);
+        }
+
+        50% {
+            transform: rotate(-45deg);
+        }
+
+        75% {
+            transform: rotate(-30deg);
+        }
+
+        100% {
+            transform: rotate(-45deg);
+        }
     }
 
-    50% {
-        transform: rotate(-45deg);
+    @keyframes open2 {
+        0% {
+            transform: rotate(-45deg);
+        }
+
+        50% {
+            transform: rotate(45deg);
+        }
+
+        75% {
+            transform: rotate(30deg);
+        }
+
+        100% {
+            transform: rotate(45deg);
+        }
     }
 
-    75% {
-        transform: rotate(-30deg);
+    @keyframes close1 {
+        0% {
+            transform: rotate(-45deg);
+        }
+
+        50% {
+            transform: rotate(45deg);
+        }
+
+        75% {
+            transform: rotate(30deg);
+        }
+
+        100% {
+            transform: rotate(45deg);
+        }
+
     }
 
-    100% {
-        transform: rotate(-45deg);
-    }
-}
+    @keyframes close2 {
+        0% {
+            transform: rotate(45deg);
+        }
 
-@keyframes open2 {
-    0% {
-        transform: rotate(-45deg);
-    }
+        50% {
+            transform: rotate(-45deg);
+        }
 
-    50% {
-        transform: rotate(45deg);
-    }
+        75% {
+            transform: rotate(-30deg);
+        }
 
-    75% {
-        transform: rotate(30deg);
-    }
-
-    100% {
-        transform: rotate(45deg);
-    }
-}
-
-@keyframes close1 {
-    0% {
-        transform: rotate(-45deg);
+        100% {
+            transform: rotate(-45deg);
+        }
     }
 
-    50% {
-        transform: rotate(45deg);
-    }
-
-    75% {
-        transform: rotate(30deg);
-    }
-
-    100% {
-        transform: rotate(45deg);
-    }
-
-}
-
-@keyframes close2 {
-    0% {
-        transform: rotate(45deg);
-    }
-
-    50% {
-        transform: rotate(-45deg);
-    }
-
-    75% {
-        transform: rotate(-30deg);
-    }
-
-    100% {
-        transform: rotate(-45deg);
-    }
-}
-  
 }

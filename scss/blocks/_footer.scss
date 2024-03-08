@@ -1,88 +1,90 @@
-
 .footer {
-background-color: #42006A;
-width: 100%;
-padding-top: 100px;
-padding-bottom: 100px;
-font-family: $font-Mono;
+   background-color: #42006A;
+   width: 100%;
+   padding-top: 100px;
+   padding-bottom: 100px;
+   font-family: $font-Mono;
 
-@media (max-width: $layout-breakpoint-small) {
-   padding-bottom: 50px;
-   padding-top: 50px;
-}
+   @media (max-width: $layout-breakpoint-small) {
+      padding-bottom: 50px;
+      padding-top: 50px;
+   }
 
 
-&__container{
-  max-width: 1190px; 
-   display: flex;
-   justify-content: space-between;
-    margin: 0 auto;
-    padding: 0 15px;
+   &__container {
+      max-width: 1190px;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+      padding: 0 15px;
 
-    @media (max-width: $layout-breakpoint-exlarge) {
-      flex-direction: column-reverse;
-      gap:50px;
-     }
-}
- &__right {
-    column-gap:100px;
-    display: flex;
+      @media (max-width: $layout-breakpoint-exlarge) {
+         flex-direction: column-reverse;
+         gap: 50px;
+      }
+   }
 
-    @media (max-width: $layout-breakpoint-exlarge) {
-     flex-wrap: wrap;
-     justify-content: space-around;
-     row-gap: 50px;
-     text-align: center;
-     }
+   &__right {
+      column-gap: 100px;
+      display: flex;
 
-     
-    @media (max-width: $layout-breakpoint-small) {
-     
-      row-gap: 30px;
-    
+      @media (max-width: $layout-breakpoint-exlarge) {
+         flex-wrap: wrap;
+         justify-content: space-around;
+         row-gap: 50px;
+         text-align: center;
       }
 
- }
 
- &__left {
-    display: flex;
-    flex-direction: column;
-    gap:70px;
-    max-width: 208px;
-    width: 100%;
+      @media (max-width: $layout-breakpoint-small) {
 
-    @media (max-width: $layout-breakpoint-exlarge) {
-      flex-direction: row;
-      max-width: unset;
-      justify-content: center;
-      align-items: baseline;
-     }
+         row-gap: 30px;
 
-     @media (max-width: $layout-breakpoint-small) {
-     flex-direction: column;
-     align-items: center;
-     gap:30px;
       }
 
- }
+   }
 
- &__links {
-    display: flex;
-    flex-direction: column;
-    gap:29px;
-    line-height: 19.2px;
-&_small_text {
-   font-size: 13px;
-}
-@media (max-width: $layout-breakpoint-small) {
-   gap:10px;
-    }
- }
+   &__left {
+      display: flex;
+      flex-direction: column;
+      gap: 70px;
+      max-width: 208px;
+      width: 100%;
 
- &__copyright {
-   font-size: 13px;
-   line-height: 20.48px;
-   
- }
+      @media (max-width: $layout-breakpoint-exlarge) {
+         flex-direction: row;
+         max-width: unset;
+         justify-content: center;
+         align-items: baseline;
+      }
+
+      @media (max-width: $layout-breakpoint-small) {
+         flex-direction: column;
+         align-items: center;
+         gap: 30px;
+      }
+
+   }
+
+   &__links {
+      display: flex;
+      flex-direction: column;
+      gap: 29px;
+      line-height: 19.2px;
+
+      &_small_text {
+         font-size: 13px;
+      }
+
+      @media (max-width: $layout-breakpoint-small) {
+         gap: 10px;
+      }
+   }
+
+   &__copyright {
+      font-size: 13px;
+      line-height: 20.48px;
+
+   }
 
 }

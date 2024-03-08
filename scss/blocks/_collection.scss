@@ -5,11 +5,12 @@
 
     @media (max-width: $layout-breakpoint-medium) {
         flex-direction: column;
-       gap:40px;
+        gap: 40px;
     }
+
     @media (max-width: $layout-breakpoint-small) {
         padding-bottom: 100px;
- 
+
     }
 
     @media (max-width: $layout-breakpoint-xsmall) {
@@ -25,18 +26,19 @@
             max-width: 100%;
             width: 100%;
             display: flex;
-            align-items:center ;
+            align-items: center;
             justify-content: space-between;
             padding: 0 50px;
         }
+
         @media (max-width: $layout-breakpoint-small) {
-          padding: 0px;
+            padding: 0px;
         }
-        
+
         @media (max-width: $layout-breakpoint-small) {
             flex-direction: column;
-        
-          }
+
+        }
     }
 
     &__right {
@@ -51,8 +53,8 @@
 
         @media (max-width: $layout-breakpoint-small) {
             padding: 0px;
-              
-          }
+
+        }
     }
 
     &__title {
@@ -68,33 +70,33 @@
 
         @media (max-width: $layout-breakpoint-medium) {
             font-size: 24px;
-            padding: 0px;   
-            
+            padding: 0px;
+
         }
-  
+
         @media (max-width: $layout-breakpoint-small) {
-        
+
             text-align: center;
             padding-bottom: 20px;
-          }
+        }
 
-          @media (max-width: $layout-breakpoint-xsmall) {
+        @media (max-width: $layout-breakpoint-xsmall) {
             font-size: 18px;
-          }
+        }
     }
 
     &__img {
         @media (max-width: $layout-breakpoint-medium) {
-        max-width: 250px;
-        width: 100%;
+            max-width: 250px;
+            width: 100%;
         }
 
         @media (max-width: $layout-breakpoint-small) {
             max-width: 150px;
             width: 100%;
-            }
-       
-    
+        }
+
+
 
     }
 
@@ -122,11 +124,12 @@
         @media (max-width: $layout-breakpoint-small) {
             font-size: 14px;
             line-height: 22px;
-          }
-          @media (max-width: $layout-breakpoint-xsmall) {
+        }
+
+        @media (max-width: $layout-breakpoint-xsmall) {
             font-size: 12px;
             line-height: 18px;
-          }
+        }
     }
 
     &__text {
@@ -151,11 +154,11 @@
             padding-bottom: 18px;
         }
 
-      
-         @media (max-width: $layout-breakpoint-small) {
+
+        @media (max-width: $layout-breakpoint-small) {
             font-size: 12px;
             padding-bottom: 10px;
-          }
+        }
     }
 
     &__subtitle::before {
@@ -169,16 +172,16 @@
         border-radius: 5px;
 
         @media (max-width: $layout-breakpoint-large) {
-          height: 100px;  
+            height: 100px;
         }
 
         @media (max-width: $layout-breakpoint-medium) {
             height: 90px;
         }
-        @media (max-width: $layout-breakpoint-small) {
-        height: 80px;
-    } 
-    }
-   
-}
 
+        @media (max-width: $layout-breakpoint-small) {
+            height: 80px;
+        }
+    }
+
+}

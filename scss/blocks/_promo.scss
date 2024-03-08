@@ -7,31 +7,34 @@
     margin-left: 120px;
 
     @media (max-width: $layout-breakpoint-exexlarge) {
-     
+
         height: 100vh;
     }
+
     @media (max-width: $layout-breakpoint-large) {
         margin: 0 auto;
         justify-content: center;
         padding-bottom: 50px;
     }
 
-    
+
     &__left {
-      
+
         @media (max-width: $layout-breakpoint-large) {
-     
+
             text-align: center;
-         }
+        }
     }
+
     &__right {
         width: 65%;
         display: flex;
         justify-content: end;
+
         @media (max-width: $layout-breakpoint-large) {
 
             display: none;
-         }
+        }
     }
 
     &__right img {
@@ -44,7 +47,7 @@
             max-width: 600px;
             width: 100%;
         }
-      
+
 
     }
 
@@ -73,6 +76,7 @@
             font-size: 36px;
 
         }
+
         @media (max-width: $layout-breakpoint-small) {
             font-size: 32px;
 
@@ -95,16 +99,17 @@
             padding-bottom: 70px;
             font-size: 16px;
             max-width: 80%;
-            
-        }
-        @media (max-width: $layout-breakpoint-large) {
-            max-width: unset;
-           text-align: center;
-           padding: 0 50px;
-           padding-bottom: 70px;
+
         }
 
-     
+        @media (max-width: $layout-breakpoint-large) {
+            max-width: unset;
+            text-align: center;
+            padding: 0 50px;
+            padding-bottom: 70px;
+        }
+
+
         @media (max-width: $layout-breakpoint-small) {
             font-size: 14px;
             padding: 0 30px;

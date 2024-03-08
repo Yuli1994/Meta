@@ -1,14 +1,15 @@
 .about {
- padding-bottom: 120px;
- 
- @media (max-width: $layout-breakpoint-small) {
-    padding-bottom: 100px;
-   
-}
-@media (max-width: $layout-breakpoint-xsmall) {
-    padding-bottom: 50px;
+    padding-bottom: 120px;
 
-}
+    @media (max-width: $layout-breakpoint-small) {
+        padding-bottom: 100px;
+
+    }
+
+    @media (max-width: $layout-breakpoint-xsmall) {
+        padding-bottom: 50px;
+
+    }
 
     &__title {
         font-size: 37px;
@@ -21,16 +22,18 @@
         &_color_grey {
             color: #A8A8A8;
         }
-   
+
         @media (max-width: $layout-breakpoint-medium) {
             font-size: 32px;
-         }
-         @media (max-width: $layout-breakpoint-small) {
+        }
+
+        @media (max-width: $layout-breakpoint-small) {
             font-size: 28px;
-         }
-         @media (max-width: $layout-breakpoint-xsmall) {
+        }
+
+        @media (max-width: $layout-breakpoint-xsmall) {
             font-size: 18px;
-         }
+        }
     }
 
     &__left {
@@ -97,7 +100,7 @@
 
         @media (max-width: $layout-breakpoint-small) {
             padding: 16px;
-           
+
         }
     }
 
@@ -186,6 +189,7 @@
             max-width: 100%;
             font-size: 14px;
         }
+
         @media (max-width: $layout-breakpoint-medium) {
             padding-bottom: 10px;
 
@@ -203,6 +207,7 @@
             max-width: 150px;
 
         }
+
         @media (max-width: $layout-breakpoint-small) {
             display: none;
 

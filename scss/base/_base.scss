@@ -1,53 +1,60 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=DM+Mono&family=Inter&display=swap');
-a {
-    transition: color .2s;
 
-    &:hover {
-        color:  #BF5693;
-    }
+a {
+  transition: color .2s;
+
+  &:hover {
+    color: #BF5693;
+  }
+}
+
+html [id],
+body [id] {
+  scroll-margin: 130px !important;
 }
 
 section {
-    max-width: 1190px;
-    padding: 0 15px;
+  max-width: 1190px;
+  padding: 0 15px;
 }
 
-  @media (min-width: $layout-breakpoint-large) {
-    section {
-        margin-left: 0;
-    }
+@media (min-width: $layout-breakpoint-large) {
+  section {
+    margin-left: 0;
   }
-    @media (min-width: $layout-breakpoint-exlarge) {
-    section {
-        margin-left: 80px;
-    }
+}
+
+@media (min-width: $layout-breakpoint-exlarge) {
+  section {
+    margin-left: 80px;
   }
+}
+
 @media (min-width: $layout-breakpoint-exexlarge) {
-    section {  
-        margin-left: 100px;
- 
-    }
+  section {
+    margin-left: 100px;
+
   }
- 
+}
 
-   .visually-hidden {
-    display: none;
-    /* Contain text within 1px box */
-    height: 1px;
-    overflow: hidden;
-    width: 1px;
 
-    /* Keep the layout */
-    position: absolute;
+.visually-hidden {
+  display: none;
+  /* Contain text within 1px box */
+  height: 1px;
+  overflow: hidden;
+  width: 1px;
 
-    /* Remove any visible trace (e.g. background color) */
-    clip: rect(1px 1px 1px 1px);
-    /* IE6, IE7 */
-    clip: rect(1px, 1px, 1px, 1px);
-    clip-path: inset(50%);
-    /* browsers in the future */
+  /* Keep the layout */
+  position: absolute;
 
-    /* Prevent the screen reader to skip spaces between words */
-    white-space: nowrap;
+  /* Remove any visible trace (e.g. background color) */
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  /* browsers in the future */
+
+  /* Prevent the screen reader to skip spaces between words */
+  white-space: nowrap;
 }

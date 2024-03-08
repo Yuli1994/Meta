@@ -19,10 +19,11 @@
         padding-bottom: 100px;
         padding-top: 100px;
     }
+
     @media (max-width: $layout-breakpoint-xsmall) {
         padding-bottom: 50px;
         padding-top: 50px;
-    
+
     }
 
     &__list {
@@ -44,14 +45,14 @@
         transition: all .5s;
 
         @media (max-width: $layout-breakpoint-small) {
-          max-width: 180px;
+            max-width: 180px;
         }
     }
 
     &__name {
         text-align: center;
         font-family: $font-Mono;
- 
+
     }
 
     &__inner {
@@ -66,8 +67,8 @@
         transform: translateX(-50%);
         display: none;
 
-        
-   
+
+
     }
 
     &__person {
@@ -103,7 +104,7 @@
 
     @media (max-width: $layout-breakpoint-small) {
         transform: translateY(-120px);
-      }
+    }
 }
 
 .artists__person:hover .artists__photo {

@@ -1,27 +1,23 @@
-.icons{
-    display: flex;
-    gap: 12px; 
+.icons {
+  display: flex;
+  gap: 12px;
 
 
   &_position_center {
-   justify-content: center;
-    }
+    justify-content: center;
+  }
 
-    &__socialmedia{
+  &__socialmedia {
     width: 36px;
     height: 36px;
     background-color: white;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     transition: all .2s;
-     &:hover {
-      background-color:  #BF5693;
+
+    &:hover {
+      background-color: #BF5693;
+    }
   }
 }
-    }
-
-  
-
-
-

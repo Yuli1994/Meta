@@ -7,12 +7,14 @@
     overflow: hidden;
 
     @media (max-width: $layout-breakpoint-small) {
-     padding-bottom: 100px;
+        padding-bottom: 100px;
     }
+
     @media (max-width: $layout-breakpoint-xsmall) {
         padding-bottom: 50px;
-    
+
     }
+
     &__cards {
         display: flex;
         flex-direction: column;
@@ -117,10 +119,10 @@
         @media (max-width: $layout-breakpoint-small) {
             padding: 15px 10px;
             gap: 10px;
-               display: grid;
+            display: grid;
             grid-template-columns: auto auto;
         }
-     
+
     }
 
     &__text {

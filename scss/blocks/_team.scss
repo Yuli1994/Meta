@@ -2,14 +2,15 @@
     margin: 0 auto;
     padding-bottom: 120px;
     padding-top: 120px;
-    
+
     @media (max-width: $layout-breakpoint-small) {
         padding-bottom: 100px;
-       
+
     }
+
     @media (max-width: $layout-breakpoint-xsmall) {
         padding-bottom: 50px;
-    
+
     }
 
     &__members {
@@ -51,9 +52,10 @@
         max-width: 238px;
         margin: 0 auto;
     }
-    &__member-img{
+
+    &__member-img {
         @media (max-width: $layout-breakpoint-small) {
             max-width: 220px;
-          }
+        }
     }
 }
